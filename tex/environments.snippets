@@ -1,0 +1,72 @@
+snippet \beg "\begin command of TeX"
+\begin{$1}
+	$2
+\end{$1}
+$0
+endsnippet
+
+snippet \fig "Figure environment" 
+\begin{figure}[$1]
+	\centering
+	\includegraphics[width=$3\textwidth]{$2}
+	\caption{$4}
+	\label{$5}
+\end{figure}
+$0
+endsnippet
+
+snippet \table "Table" 
+\begin{table}
+	\centering
+	\caption{$1}
+	\label{$2}
+	\begin{tabular}{$3}
+		$4
+	\end{tabular}
+\end{table}
+$0
+endsnippet
+
+snippet \def "Definition"
+\begin{definition}[$1]
+	$2
+\end{definition}
+$0
+endsnippet
+
+snippet \proof "Proof"
+\begin{proof}
+	$1
+\end{proof}
+$0
+endsnippet
+
+snippet \alg "Algorithm"
+\begin{alg}[$1]
+	$2
+\end{alg}
+$0
+endsnippet
+
+snippet \minted "Inputminted with standard appearance" 
+\inputminted[xleftmargin=20pt,linenos]{python3}{$1}
+$0
+endsnippet
+
+snippet \newcommand "newcommand" i
+\newcommand{${1:new}}{${2:old}}
+$0
+endsnippet
+
+snippet \rein "rein command für protokolle" i
+\rein{${1:Uhrzeit}}{${2:Wer?}}
+endsnippet
+snippet \reinn "rein command für protokolle" i
+\reinn{${1:Uhrzeit}}{${2:Wer?}}
+endsnippet
+snippet \raus "rein command für protokolle" i
+\raus{${1:Uhrzeit}}{${2:Wer?}}
+endsnippet
+snippet \rausn "rein command für protokolle" i
+\rausn{${1:Uhrzeit}}{${2:Wer?}}
+endsnippet
